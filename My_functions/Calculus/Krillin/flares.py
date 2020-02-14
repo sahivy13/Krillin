@@ -18,6 +18,8 @@ delta = end - start
 
 days = [start + timedelta(days = i) for i in range(delta.days + 1)]
 
+# ORIGINAL
+
 # list_of_days = ['Monday', 'Tuesday']
 
 # t_t_s_d = [d for i, d in enumerate(days) if days[i].strftime('%A') in ['Tuesday', 'Thursday','Saturday', 'Sunday']] # 
