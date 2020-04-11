@@ -2,8 +2,8 @@ from datetime import date, timedelta, datetime
 import os
 import numpy as np
 
-start = datetime(2019, 8, 20)
-end = datetime(2019, 12, 31)
+# start = datetime(2019, 8, 20)
+# end = datetime(2019, 12, 31)
 
 # start = datetime(2020, 1, 1)
 # end = datetime(2020,2, 12)
@@ -11,7 +11,8 @@ end = datetime(2019, 12, 31)
 # start = datetime(2020, 1, 1)
 # end = datetime(2020, 3, 7)
 
-
+start = datetime(2020, 2, 23)
+end = datetime(2020, 4, 10)
 
 
 delta = end - start
