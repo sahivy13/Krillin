@@ -19,7 +19,9 @@ delta = end - start
 
 days = [start + timedelta(days = i) for i in range(delta.days + 1)]
 
-# ORIGINAL
+#---------
+
+## ORIGINAL
 
 # list_of_days = ['Monday', 'Tuesday']
 
@@ -45,7 +47,11 @@ days_list = [dt.day for dt in t_t_s_d]
 months_list = list(set([dt.month for dt in t_t_s_d]))
 years_list = list(np.unique([dt.year for dt in t_t_s_d]))
 
-# list_in = [0] #index list of days_list of breaks (ORIGINAL)
+#------------------------
+
+## ORIGINAL
+
+# list_in = [0] #index list of days_list of breaks
 
 # for i, num in enumerate(days_list):
 #     try:
@@ -53,6 +59,8 @@ years_list = list(np.unique([dt.year for dt in t_t_s_d]))
 #             list_in.append(i+1)
 #     except:
 #         continue
+
+# RANDOM CHOICE VERSION
 
 list_in = [0] #index list of days_list of breaks (RANDOM CHOICE VERSION)
 
