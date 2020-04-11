@@ -21,19 +21,19 @@ days = [start + timedelta(days = i) for i in range(delta.days + 1)]
 
 #---------
 
-## ORIGINAL
+# ORIGINAL
 
-# list_of_days = ['Monday', 'Tuesday']
+list_of_days = ['Monday', 'Tuesday']
 
-# t_t_s_d = [d for i, d in enumerate(days) if days[i].strftime('%A') in ['Tuesday', 'Thursday','Saturday', 'Sunday']] # 
+t_t_s_d = [d for i, d in enumerate(days) if days[i].strftime('%A') in ['Tuesday', 'Thursday','Saturday', 'Sunday']] # 
 
-# RANDOM VALUE
+# # RANDOM VALUE
 
-import random 
+# import random 
 
-t_t_s_d = []    
-for i in range(int(len(days)/5)):
-    t_t_s_d.append(random.choice(days))
+# t_t_s_d = []    
+# for i in range(int(len(days)/5)):
+#     t_t_s_d.append(random.choice(days))
 
 # # OTHER DAYS RANDOM    
 
@@ -52,25 +52,25 @@ years_list = list(np.unique([dt.year for dt in t_t_s_d]))
 
 #--------------
 
-## ORIGINAL
-
-# list_in = [0] #index list of days_list of breaks
-
-# for i, num in enumerate(days_list):
-#     try:
-#         if days_list[i]>days_list[i+1]:
-#             list_in.append(i+1)
-#     except:
-#         continue
-
-# RANDOM CHOICE VERSION
+# ORIGINAL
 
 list_in = [0] #index list of days_list of breaks
 
-step = int(len(days_list)/len(months_list))
+for i, num in enumerate(days_list):
+    try:
+        if days_list[i]>days_list[i+1]:
+            list_in.append(i+1)
+    except:
+        continue
 
-for i in range(1,len(months_list)):
-    list_in.append(i*step)
+# # RANDOM CHOICE VERSION
+
+# list_in = [0] #index list of days_list of breaks
+
+# step = int(len(days_list)/len(months_list))
+
+# for i in range(1,len(months_list)):
+#     list_in.append(i*step)
 
 #--------
         
